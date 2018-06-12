@@ -1,0 +1,29 @@
+{
+  "name": "jadebem",
+  "version": "1.0.0",
+  "description": "Simple start template A simple starting template for using the methodology of bem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bem",
+    "jade",
+    "pug.js",
+    "gulp",
+    "template"
+  ],
+  "author": "web-jade",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "browser-sync": "^2.24.4",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file": "^0.4.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
