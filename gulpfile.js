@@ -6,6 +6,7 @@ var
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     browserSync = require('browser-sync'),
+    notify = require("gulp-notify"),
     cleancss = require('gulp-cleancss');
 
 gulp.task('browser-sync', function() {
@@ -34,6 +35,7 @@ gulp.task('styles', function () {
         .pipe(stylus({
             'include css': true
         }))
+        .on("error", notify.onError())
         .pipe(concat('main.css'))
         .pipe(gulp.dest('src/assets/css'))
         .pipe(cleancss({
